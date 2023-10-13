@@ -35,8 +35,8 @@ body::before {
 }
 
 header {
-  margin-top: 140px;
   width: 470px;
+  margin-top: 140px;
 }
 
 header h1 {
@@ -69,6 +69,3 @@ fieldset {
   border: none;
 }
 
-.fieldset-wrapper {
-  
-}
