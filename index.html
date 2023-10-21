@@ -17,28 +17,38 @@
   </header>
   <form class="meu-formulario">
     <fieldset>
-      <div class="wrapper-inf">
-          <legend>Informações Pessoais</legend>
-          <div class="line"></div>
-        <div class="col-2">
+      <legend>Informações Pessoais</legend>
+      <div class="line"></div>
+  <div class="wrapper-inf">
+    <div class="col-2">
+        <div class="input-wrapper">
           <label for="name">Nome</label>
           <input type="text" id="name">
+        </div>
+        <div class="input-wrapper">
           <label for="lastname">Sobrenome</label>
           <input type="text" id="lastname">
         </div>
+    </div>
+        <div class="input-wrapper">
           <label for="email">Email <span>(digite um email válido)</span></label>
           <input type="email" id="email">
+        </div>
+        <div class="input-wrapper">
           <label for="password">Senha <span>(mínimo de 6 caracteres)</span></label>
           <input type="password" id="password">
-      </div>
+        </div>
+  </div>
     </fieldset>
 
     <fieldset>
       <div class="wrapper-mentor">
           <legend>Informações Do Mentor</legend>
           <div class="line"></div>
+        <div class="input-wrapper">
           <label for="mentor-name">Nome do seu mentor <span>(só o primeiro nome)</span></label>
           <input type="text" id="mentor-name">
+        </div>
       </div>
     </fieldset>
 
@@ -46,26 +56,46 @@
       <div class="wrapper-datetime">
           <legend>Seus Horários</legend>
           <div class="line"></div>
-          <legend>Primeira Mentoria</legend>
+          <legend class="sub-title">Primeira Mentoria</legend>
+        <div class="col-3">
+          <div class="input-wrapper">
           <label for="data">Data <span>(dd/mm/aaaa)</span></label>
           <input type="date" id="data">
+        </div>
+        
+        <div class="input-wrapper">
           <label for="data-start">Das</label>
           <input type="datetime" id="data-start">
+        </div>
+        
+        <div class="input-wrapper">
           <label for="data-end">Até</label>
           <input type="datetime" id="data-end">
-          
-          <legend>Segunda Mentoria</legend>
-          <label for="data">Data <span>(dd/mm/aaaa)</span></label>
-          <input type="date" id="data">
-          <label for="data-start">Das</label>
-          <input type="datetime" id="data-start">
-          <label for="data-end">Até</label>
-          <input type="datetime" id="data-end">
+        </div>
       </div>
+          
+          <legend class="sub-title">Segunda Mentoria</legend>
+          <div class="col-3">
+        <div class="input-wrapper">
+          <label for="date">Data <span>(dd/mm/aaaa)</span></label>
+          <input type="date" id="date">
+        </div>
+        
+        <div class="input-wrapper">
+          <label for="date-start">Das</label>
+          <input type="datetime" id="date-start">
+        </div>
+        
+        <div class="input-wrapper">
+          <label for="date-end">Até</label>
+          <input type="datetime" id="date-end">
+        </div>
+      </div>
+    </div>
     </fieldset>
   </form>
 <footer>
-  <input type="text" class="button" value="Salvar" form="meu-formulario">
+  <input type="submit" class="button" value="Salvar" form="meu-formulario">
 </footer>
 </div>
 </body>
